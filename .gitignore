@@ -56,3 +56,5 @@ terraform.tfstate.backup
 
 # Scripts
 *allowlist*
+
+*-lock.json
