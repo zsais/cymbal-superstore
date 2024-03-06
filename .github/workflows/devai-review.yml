@@ -28,17 +28,17 @@ jobs:
   
       - name: Code Review
         run: echo '## Code Review Results 🚀' >> $GITHUB_STEP_SUMMARY
-      - run: echo "$(devai review code -c ${{ github.workspace }}/backend/index.ts)" >> $GITHUB_STEP_SUMMARY
+      - run: echo "$(devai review code -c ${{ github.workspace }}/backend)" >> $GITHUB_STEP_SUMMARY
         shell: bash
 
       - name: Performance Review
         run: echo '## Performance Review Results 🚀' >> $GITHUB_STEP_SUMMARY
-      - run: echo "$(devai review performance -c ${{ github.workspace }}/backend/index.ts)" >> $GITHUB_STEP_SUMMARY
+      - run: echo "$(devai review performance -c ${{ github.workspace }}/backend)" >> $GITHUB_STEP_SUMMARY
         shell: bash
 
       - name: Security Review
         run: echo '## Performance Review Results 🚀' >> $GITHUB_STEP_SUMMARY
-      - run: echo "$(devai review security -c ${{ github.workspace }}/backend/index.ts)" >> $GITHUB_STEP_SUMMARY
+      - run: echo "$(devai review security -c ${{ github.workspace }}/backend)" >> $GITHUB_STEP_SUMMARY
         shell: bash
 
 
